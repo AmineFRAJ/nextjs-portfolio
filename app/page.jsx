@@ -13,7 +13,7 @@ const Home = () => {
             <span className="text-xl">FS Web Developer</span>
             <h1 className="h1 mb-6">
               Hello I'm <br />
-              <span className="text-accent">FRAJ Amine</span>
+              <span className="text-accent">Amine FRAJ</span>
             </h1>
             <p className="max-w-[500px] mb-6 text-white/80">
               I earned my degree in International Business and Corporate
@@ -24,26 +24,26 @@ const Home = () => {
             </p>
 
             {/* Socials */}
-            <div className="flex flex-col xl:flex-row items-center gap-8 mb-4">
-              <a href="\assets\Resume\CV FRAJ Mohamed Amine (ba).pdf/">
+            <div className="flex flex-col xl:flex-row items-center gap-8 mb-6">
+              <a href="\Resume\CV FRAJ Mohamed Amine (ba).pdf/">
                 {" "}
                 <Button
                   variant="outline"
-                  className="uppercase flex items-center gap-2 bg-dark border-accent rounded-lg"
+                  className="uppercase flex  font-thin text-accent items-center gap-2 bg-dark border-accent rounded-2xl "
                 >
                   <span>Download CV</span>
-                  <FiDownload className="text-xl" />
+                  <FiDownload className="text-xl text-accent " />
                 </Button>
               </a>
 
               <div className=" xl:mb-0">
-                <Socials />
+                <Socials/>
               </div>
             </div>
           </div>
 
           {/* photo */}
-          <Image src="/assets/photo.png" alt="aa" width={550} height={400} />
+          <Image src="/assets/profile.png" alt="aa" width={550} height={500} />
         </div>
       </div>
     </section>
