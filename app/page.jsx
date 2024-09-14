@@ -13,7 +13,6 @@ const Home = () => {
     router.push("/maintenance");
   };
 
-  
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
@@ -26,11 +25,11 @@ const Home = () => {
               <span className="text-accent">Amine FRAJ</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80 text-justify ">
-              I earned my degree in International Business and Corporate
-              Development in CNAM Paris, but I soon decided to pivot to the tech
-              world. I began my journey by obtaining an ISTQB certification in
-              software testing, and from there, I transitioned into becoming a
-              full-stack web developer.
+              I completed my Master’s degree in International Business and
+              Corporate Development from CNAM Paris. With a growing interest in
+              technology, I transitioned into the tech world. I started by
+              obtaining an ISTQB certification in software testing, which paved
+              the way for my career as a full-stack web developer.
             </p>
 
             {/* Socials */}

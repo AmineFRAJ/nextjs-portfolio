@@ -5,7 +5,7 @@ const Contact = () => {
     <section className="h-full">
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
-          {/* Left: Contact Form */}
+          {/*  Contact Form */}
           <div className="text-center xl:text-left">
             <h1 className="h1 mb-6">
               Contact Me
@@ -20,6 +20,7 @@ const Contact = () => {
                   id="name"
                   className="w-full border border-gray-300 p-2 rounded-md"
                   placeholder="Enter your name"
+                  required
                 />
               </div>
 
@@ -32,11 +33,12 @@ const Contact = () => {
                   id="email"
                   className="w-full border border-gray-300 p-2 rounded-md"
                   placeholder="Enter your email"
+                  required
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium">
+                <label htmlFor="message" className="block text-sm font-medium" >
                   Your Message
                 </label>
                 <textarea
@@ -44,6 +46,7 @@ const Contact = () => {
                   className="w-full border border-gray-300 p-2 rounded-md"
                   rows="4"
                   placeholder="Enter your message"
+                  required
                 />
               </div>
 
@@ -54,7 +57,7 @@ const Contact = () => {
             </form>
           </div>
 
-          {/* Right: Contact Details */}
+          {/* my contact*/}
           <div className="mt-12 xl:mt-0 text-center xl:text-left">
             <h2 className="text-2xl font-bold">Mohamed Amine FRAJ </h2>
             <p className="mt-4">

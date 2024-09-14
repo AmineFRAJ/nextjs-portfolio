@@ -1,6 +1,5 @@
 "use client";
-import { BsArrowDownRight } from "react-icons/bs";
-import Link from "next/link";
+
 import { motion } from "framer-motion";
 
 const services = [
@@ -13,9 +12,9 @@ const services = [
   },
   {
     num: "02",
-    title: "Quality Assurance (ISTQB Certified)",
+    title: "Responsive Web Design",
     description:
-      "Providing high-quality software testing services to ensure the reliability and performance of web applications. As an ISTQB-certified tester, I follow industry standards to deliver bug-free and efficient solutions.",
+      "Ensuring that websites are fully responsive  with user-friendly interfaces and perform well on any device, including mobile, tablet, and desktop platforms using modern CSS frameworks (e.g., Tailwind ,Bootstrap).",
     href: "",
   },
   {
@@ -25,25 +24,21 @@ const services = [
       "Developing and integrating RESTful APIs for web applications to enhance connectivity between front-end and back-end services. Expertise in building secure and scalable APIs.",
     href: "",
   },
+
+  
+  
   {
     num: "04",
-    title: "E-commerce Development",
+    title: "Database Fundamentals",
     description:
-      "Creating scalable e-commerce platforms with custom features such as payment gateways, product management, and user-friendly interfaces to drive online sales.",
+      "Handling the fundamentals of databases using SQL and NoSQL solutions (e.g., MySQL, MongoDB) to ensure data integrity and optimized performance.",
     href: "",
   },
   {
     num: "05",
-    title: "Database Design & Management",
+    title: "Quality Assurance (ISTQB Certified)",
     description:
-      "Designing and managing robust databases using SQL and NoSQL solutions (e.g., MySQL, MongoDB) to ensure data integrity and optimized performance.",
-    href: "",
-  },
-  {
-    num: "06",
-    title: "Responsive Web Design",
-    description:
-      "Ensuring that websites are fully responsive and perform well on any device, including mobile, tablet, and desktop platforms using Tailwind CSS and other modern CSS frameworks.",
+      "Providing high-quality software testing services to ensure the reliability and performance of web applications. As an ISTQB-certified tester, I follow industry standards to deliver bug-free and efficient solutions.",
     href: "",
   },
 ];
@@ -68,23 +63,15 @@ const Services = () => {
               >
                 {/* top */}
                 <div className="w-full flex justify-between items-center">
-                  <div className="text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover cursor-pointer transitin-all duration-500">
+                  <div className="text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover cursor-default transitin-all duration-500">
                     {service.num}
                   </div>
-                  <Link
-                    href={service.href}
-                    className="w-[70px] h-[70px] rounded-full bg-white
-  group-hover:bg-accent transition-all duration-500 flex
-  justify-center items-center hover:-rotate-45"
-                  >
-                    <BsArrowDownRight className="text-primary text-3xl" />
-                  </Link>
                 </div>
 
                 {/* title */}
                 <h2
                   className="text-2xl font-bold leading-none text-white
-  group-hover:text-accent transition-all duration-500"
+  group-hover:text-accent transition-all duration-500 cursor-default "
                 >
                   {service.title}
                 </h2>
