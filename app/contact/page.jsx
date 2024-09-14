@@ -56,7 +56,7 @@ const Contact = () => {
 
           {/* Right: Contact Details */}
           <div className="mt-12 xl:mt-0 text-center xl:text-left">
-            <h2 className="text-2xl font-bold">FRAJ Amine</h2>
+            <h2 className="text-2xl font-bold">Mohamed Amine FRAJ </h2>
             <p className="mt-4">
               <strong>Email:</strong> amine0924@gmail.com
             </p>
@@ -64,7 +64,7 @@ const Contact = () => {
               <strong>Phone:</strong> +21652680566
             </p>
             <p className="mt-4">
-              <strong>Address:</strong> 16 Omar Mokhtar, Ariana, Tunisia
+              <strong>Address:</strong> 16 Rue Omar Mokhtar, Ariana, Tunisia
             </p>
           </div>
         </div>

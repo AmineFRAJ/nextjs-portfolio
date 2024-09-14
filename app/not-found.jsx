@@ -9,7 +9,7 @@ const NotFound = () => {
           <h1 className="mb-4 text-7xl tracking-tight font-extrabold lg:text-9xl text-accent dark:text-primary-500">
             404
           </h1>
-          <p className="mb-4 text-3xl tracking-tight font-bold text-gray-900 md:text-4xl dark:text-white">
+          <p className="mb-4 text-3xl tracking-tight font-bold text-gray-400 md:text-4xl dark:text-white">
             Something's missing.
           </p>
           <p className="mb-4 text-lg font-light text-gray-400 dark:text-gray-400">
