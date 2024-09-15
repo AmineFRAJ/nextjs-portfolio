@@ -84,7 +84,7 @@ const education = {
 //skills
 const skills = {
   icon: "/resume/cap.svg",
-  title: " My Skills",
+  title: "Skills",
   description:
     "In my full-stack web development bootcamp, I mastered core technologies like JavaScript, CSS, HTML, along with advanced tools such as React, Redux, and Next.js. I also gained experience with MongoDB, enabling me to build full-stack, data-driven applications efficiently.",
   list: [
@@ -136,7 +136,7 @@ const Resume = () => {
             </TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
-            <TabsTrigger value="about">About me</TabsTrigger>
+            <TabsTrigger value="about">About Me</TabsTrigger>
           </TabsList>
           {/* content */}
           <div className="min-h-[70vh] w-full">
@@ -208,7 +208,7 @@ const Resume = () => {
             <TabsContent value="skills" className="  w-full">
               <div className="flex flex-col gap-[30px]">
                 <div className="flex flex-col gap-[30px] text-center  xl:text-left ">
-                  <h3 className="text-4xl font-bold">{skills.title}</h3>
+                  <h3 className="text-4xl font bold">{skills.title}</h3>
                   <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 lg:text-justify">
                     {skills.description}
                   </p>
@@ -239,11 +239,11 @@ const Resume = () => {
             {/* about */}
             <TabsContent
               value="about"
-              className="  w-full text-centr xl:text:left lg:text-justify "
+              className=" w-full text-center xl:text:left  "
             >
-              <div className="flex flex-col gap-[30px]">
-                <h3 className="text-4xl font-bold">{about.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+              <div className="flex flex-col gap-[30px] text-center  xl:text-left">
+                <h3 className="text-4xl font bold">{about.title}</h3>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 lg:text-justify">
                   {about.description}
                 </p>
                 <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
