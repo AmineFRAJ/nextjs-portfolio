@@ -121,7 +121,7 @@ const Resume = () => {
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+        transition: { delay: 2, duration: 0.4, ease: "easeIn" },
       }}
       className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
     >
@@ -155,7 +155,7 @@ const Resume = () => {
                           key={index}
                           className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
                         >
-                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text:left">
+                          <h3 className="text-l max-w-[260px] min-h-[60px] text-center lg:text:left">
                             {item.formation}
                           </h3>
 
@@ -187,7 +187,7 @@ const Resume = () => {
                           key={index}
                           className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start   "
                         >
-                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text:left">
+                          <h3 className="text-l max-w-[260px] min-h-[60px] text-center lg:text:left">
                             {item.institution}
                           </h3>
 
