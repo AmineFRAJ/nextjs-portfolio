@@ -89,7 +89,7 @@ const skills = {
     "In my full-stack web development bootcamp, I mastered core technologies like JavaScript, CSS, HTML, along with advanced tools such as React, Redux, and Next.js. I also gained experience with MongoDB, enabling me to build full-stack, data-driven applications efficiently.",
   list: [
     { icon: <FaHtml5 />, name: "HTML 5" },
-    { icon: <FaCss3 />, name: "CSS 3" },
+    { icon: <FaCss3 />, name: "CSS " },
     { icon: <SiTailwindcss />, name: "Tailwind CSS" },
     { icon: <SiBootstrap />, name: "Bootstrap" },
     { icon: <FaJs />, name: "JavaScript" },
