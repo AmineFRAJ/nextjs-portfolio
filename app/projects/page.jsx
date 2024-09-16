@@ -165,7 +165,7 @@ const Projects = () => {
               <ul className="flex gap-4">
                 {project.stack.map((item, index) => {
                   return (
-                    <li key={index} className="text-sm text-accent lg:text-l ">
+                    <li key={index} className=" text-accent text-xs lg:text-lg">
                       {item.name} {index !== project.stack.length - 1 && ","}
                     </li>
                   );
@@ -176,29 +176,29 @@ const Projects = () => {
               {/*buttons */}
               <div className="flex items-center gap-4">
                 {/*Live project  button */}
+
                 {project.live && project.live !== "" && (
                   <Link href={project.live}>
                     <TooltipProvider delayDuration={100}>
                       <Tooltip>
-                        <TooltipTrigger
-                          className="w-[70px] h-[70px] rounded-full bg-whi
-                        te/5 flex justify-center items-center group"
-                        >
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group ">
                           <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
                         </TooltipTrigger>
                         <TooltipContent>
-                          <p>Visit Project</p>
+                         
+                          <p>Visit project</p>
                         </TooltipContent>
                       </Tooltip>
                     </TooltipProvider>
                   </Link>
                 )}
+
                 {/*github project  button */}
-                {project.github && project.github !== "" && (
+                {project.github && project.github !== "" ? (
                   <Link href={project.github}>
                     <TooltipProvider delayDuration={100}>
                       <Tooltip>
-                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group ">
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
                           <BsGithub className="text-white text-3xl group-hover:text-accent" />
                         </TooltipTrigger>
                         <TooltipContent>
@@ -207,6 +207,17 @@ const Projects = () => {
                       </Tooltip>
                     </TooltipProvider>
                   </Link>
+                ) : (
+                  <div className="w-[70px] h-[70px] rounded-full bg-gray-300 flex justify-center items-center cursor-not-allowed">
+                    <BsGithub className="text-gray-500 text-3xl" />
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipContent>
+                          <p>GitHub repository not available</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </div>
                 )}
               </div>
             </div>
@@ -225,7 +236,7 @@ const Projects = () => {
                       {/*overlay*/}
                       <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                       {/*image */}
-                      <div className="relative w-full h-full">
+                      <div className="relative w-full h-full ">
                         <Image
                           src={project.image}
                           fill
@@ -236,7 +247,7 @@ const Projects = () => {
                     </div>
                     {/* slider buttons */}
                     <WorkSliderBtns
-                      containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none "
+                      containerStyles=" flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none "
                       btnStyles="  bg-gray-200/50 rounded-full p-2 text-primary  hover:bg-white hover:text-accent flex justify-center  items-center transition-all"
                     />
                   </SwiperSlide>
