@@ -2,17 +2,8 @@
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectLabel,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
-import { Description } from "@radix-ui/react-dialog";
+import { sendContactForm } from "@/lib/api";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { FaPhoneAlt, FaMapMarkedAlt, FaEnvelope } from "react-icons/fa";
@@ -22,10 +13,11 @@ const info = [
   { icon: <FaEnvelope />, title: "Email", Description: "amine0924@gmail.com" },
   {
     icon: <FaMapMarkedAlt />,
-    title: "Adress",
+    title: "Address",
     Description: "16 Rue Omar Mokhtar, Ariana",
   },
 ];
+
 const initValues = {
   firstname: "",
   lastname: "",
@@ -33,11 +25,42 @@ const initValues = {
   phone: "",
   message: "",
 };
-const initState = { values: initValues };
+
+const initState = { values: initValues, isLoading: false, isSent: false, isError: false };
+
 const Contact = () => {
   const [state, setState] = useState(initState);
-  const { values } = state;
-  
+
+  // Destructure values and state
+  const { values, isLoading, isSent, isError } = state;
+
+  // Handle input change
+  const handleChange = ({ target }) =>
+    setState((prev) => ({
+      ...prev,
+      values: {
+        ...prev.values,
+        [target.name]: target.value,
+      },
+    }));
+
+  // Handle form submission
+  const onSubmit = async () => {
+    // Set loading state to true before submission
+    setState((prev) => ({ ...prev, isLoading: true }));
+
+    try {
+      // Attempt to send the contact form
+      await sendContactForm(values);
+      
+      // If successful, set isSent to true and reset loading and error state
+      setState((prev) => ({ ...prev, isLoading: false, isSent: true, isError: false }));
+    } catch (error) {
+      // If error occurs, set isError to true and reset loading
+      setState((prev) => ({ ...prev, isLoading: false, isSent: false, isError: true }));
+    }
+  };
+
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -60,6 +83,7 @@ const Contact = () => {
                   placeholder="Firstname"
                   required
                   value={values.firstname}
+                  onChange={handleChange}
                 />
                 <Input
                   type="text"
@@ -67,6 +91,7 @@ const Contact = () => {
                   placeholder="Lastname"
                   required
                   value={values.lastname}
+                  onChange={handleChange}
                 />
                 <Input
                   type="email"
@@ -74,12 +99,15 @@ const Contact = () => {
                   placeholder="Email"
                   required
                   value={values.email}
+                  onChange={handleChange}
                 />
                 <Input
                   type="tel"
                   name="phone"
                   placeholder="Phone"
                   value={values.phone}
+                  onChange={handleChange}
+                  required
                 />
               </div>
               {/* select*/}
@@ -106,14 +134,21 @@ const Contact = () => {
                 requirevalue={values.message}
                 rows={6}
                 required
+                onChange={handleChange}
               />
               {/* btn*/}
               <Button
                 variant="outline"
                 className="  max-w-40 flex font-thin text-accent items-center gap-2 bg-dark border-accent rounded-2xl hover:font-bold "
+                onClick={onSubmit}
+                disabled={isLoading} // Disable button while submitting
               >
-                Send message
+                {isLoading ? "Sending..." : "Send message"}
               </Button>
+
+              {/* Display feedback message based on form submission status */}
+              {isSent && <p className="text-green-500">Message sent successfully!</p>}
+              {isError && <p className="text-red-500">Failed to send the message. Please try again.</p>}
             </form>
           </div>
           {/* info*/}
