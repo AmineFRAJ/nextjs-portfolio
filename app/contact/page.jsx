@@ -45,7 +45,18 @@ const Contact = () => {
     }));
 
   // Handle form submission
-  const onSubmit = async () => {
+  const onSubmit = async (e) => {
+    // Prevent default form submission
+    e.preventDefault();
+
+    // Check if the form is valid
+    const isValid = Object.values(values).every(value => value.trim() !== "");
+    
+    if (!isValid) {
+      setState((prev) => ({ ...prev, isError: true }));
+      return; // Prevent submission if not valid
+    }
+
     // Set loading state to true before submission
     setState((prev) => ({ ...prev, isLoading: true }));
 
