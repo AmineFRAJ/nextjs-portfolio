@@ -14,6 +14,7 @@ import {
 import { Textarea } from "@/components/ui/textarea";
 import { Description } from "@radix-ui/react-dialog";
 import { motion } from "framer-motion";
+import { useState } from "react";
 import { FaPhoneAlt, FaMapMarkedAlt, FaEnvelope } from "react-icons/fa";
 
 const info = [
@@ -25,7 +26,18 @@ const info = [
     Description: "16 Rue Omar Mokhtar, Ariana",
   },
 ];
+const initValues = {
+  firstname: "",
+  lastname: "",
+  email: "",
+  phone: "",
+  message: "",
+};
+const initState = { values: initValues };
 const Contact = () => {
+  const [state, setState] = useState(initState);
+  const { values } = state;
+  
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -42,10 +54,33 @@ const Contact = () => {
             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
               <h3 className="text-4xl text-accent">Contact Me</h3> {/* input*/}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input type="firstname" placeholder="Firstname"  />
-                <Input type="lastname" placeholder="Lastname"  />
-                <Input type="email" placeholder="Email" required/>
-                <Input type="phone" placeholder="Phone" />
+                <Input
+                  type="text"
+                  name="firstname"
+                  placeholder="Firstname"
+                  required
+                  value={values.firstname}
+                />
+                <Input
+                  type="text"
+                  name="lastname"
+                  placeholder="Lastname"
+                  required
+                  value={values.lastname}
+                />
+                <Input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  required
+                  value={values.email}
+                />
+                <Input
+                  type="tel"
+                  name="phone"
+                  placeholder="Phone"
+                  value={values.phone}
+                />
               </div>
               {/* select*/}
               {/* <Select>
@@ -66,7 +101,9 @@ const Contact = () => {
               {/*Textarea*/}
               <Textarea
                 className="h-[200px]"
+                name="message"
                 placeholder="Type your message here."
+                requirevalue={values.message}
                 rows={6}
                 required
               />
@@ -89,9 +126,7 @@ const Contact = () => {
                       <div className="text-[28px]">{item.icon}</div>
                     </div>
                     <div className="flex-1">
-                      <p className="text-white/60">
-                        {item.title}
-                      </p>
+                      <p className="text-white/60">{item.title}</p>
                       <h3 className="text-xl">{item.Description}</h3>
                     </div>
                   </li>

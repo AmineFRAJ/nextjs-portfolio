@@ -8,10 +8,10 @@ import { FiDownload } from "react-icons/fi";
 
 const Home = () => {
   // Navigate to the maintenance page
-  const router = useRouter();
-  const handleClick = () => {
-    router.push("/maintenance");
-  };
+  // const router = useRouter();
+  // const handleClick = () => {
+  //   router.push("/maintenance");
+  // };
 
   return (
     <section className="h-full">
@@ -34,16 +34,16 @@ const Home = () => {
 
             {/* Socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8 mb-6">
-              {/* <a href="/Resume/CV FRAJ Mohamed Amine (ba).pdf/"> */}
+              <a href="/resume/CV-FRAJ Amine (FS dev).pdf">
               <Button
-                onClick={handleClick} //navigate to maintenance
+                // onClick={handleClick} //navigate to maintenance
                 variant="outline"
                 className="uppercase flex font-thin text-accent items-center gap-2 bg-dark border-accent rounded-2xl hover:font-bold"
               >
                 <span>Download CV</span>
                 <FiDownload className="text-xl  " />
               </Button>
-              {/* </a> */}
+              </a>
 
               <div className="mb-8 xl:mb-0">
                 <Socials
