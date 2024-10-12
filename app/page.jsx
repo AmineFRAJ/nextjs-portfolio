@@ -34,7 +34,7 @@ const Home = () => {
 
             {/* Socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8 mb-6">
-              <a href="/resume/CV-FRAJ Amine (FS dev).pdf">
+              <a href="/resume/CV FRAJ Mohamed Amine .pdf">
               <Button
                 // onClick={handleClick} //navigate to maintenance
                 variant="outline"
