@@ -20,6 +20,23 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
+    category: "e-commerce",
+    title: "MERN E-commerce Project",
+    description:
+      "This is a MERN stack e-commerce application that enables users to browse products, add items to their cart, and authenticate their accounts. The project features a user-friendly interface for product management, allowing users to easily navigate through various categories. It utilizes JWT for user authentication, ensuring secure access to user profiles.",
+    stack: [
+      { name: "MongoDB" },
+      { name: "Express.js" },
+      { name: "React" },
+      { name: "Node.js" },
+      { name: "JWT " },
+    ],
+    image: "/assets/project10.png",
+    live: "https://gadget-hub-client.vercel.app/",  
+    github: "https://github.com/AmineFRAJ/GadgetHub-client.git",  
+  },
+  {
+    num: "02",
     category: "frontend",
     title: "Portfolio Project",
     description:
@@ -36,7 +53,7 @@ const projects = [
     github: "https://github.com/AmineFRAJ/nextjs-portfolio.git",
   },
   {
-    num: "02",
+    num: "03",
     category: "frontend",
     title: "ToDo List App",
     description:
@@ -47,7 +64,7 @@ const projects = [
     github: "https://github.com/AmineFRAJ/Redux-todo-app.git",
   },
   {
-    num: "03",
+    num: "04",
     category: "frontend",
     title: "Movie App",
     description:
@@ -58,7 +75,7 @@ const projects = [
     github: "https://github.com/AmineFRAJ/movie-router-app.git",
   },
   {
-    num: "04",
+    num: "05",
     category: "frontend",
     title: "Weather App",
     description:
@@ -69,7 +86,7 @@ const projects = [
     github: "https://github.com/AmineFRAJ/Weather-App.git",
   },
   {
-    num: "05",
+    num: "06",
     category: "frontend",
     title: "Counter App",
     description:
@@ -80,7 +97,7 @@ const projects = [
     github: "",
   },
   {
-    num: "06",
+    num: "07",
     category: "frontend",
     title: "Calculator App",
     description:
@@ -91,7 +108,7 @@ const projects = [
     github: "",
   },
   {
-    num: "07",
+    num: "08",
     category: "frontend",
     title: "Shopping Cart System",
     description:
@@ -102,7 +119,7 @@ const projects = [
     github: "https://github.com/AmineFRAJ/Dom-check01.git",
   },
   {
-    num: "08",
+    num: "09",
     category: "frontend",
     title: "Jewelry Store Website",
     description:
@@ -113,7 +130,7 @@ const projects = [
     github: "https://github.com/AmineFRAJ/Jewelry-Store-Website.git",
   },
   {
-    num: "09",
+    num: "10",
     category: "frontend",
     title: "Restaurant Website",
     description:
