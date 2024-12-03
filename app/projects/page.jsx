@@ -20,6 +20,19 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
+    category: "ToDo List",
+    title: "Listify- MERN Project ",
+    description:
+      "A professional ToDo List application built using React and Bootstrap. This project provides a clean and intuitive interface for task management. Users can add, edit, delete, and organize tasks efficiently. Styled with Bootstrap, it offers a modern and responsive design suitable for various screen sizes.",
+    stack: [   { name: "MongoDB" },
+      { name: "Express.js" },{ name: "React" },{ name: "Node.js" },
+        { name: "Bootstrap" }],
+    image: "/assets/listify.png",
+    live: "https://listify-client.vercel.app/",
+    github: "https://github.com/AmineFRAJ/Listify-client",
+  },
+  {
+    num: "02",
     category: "e-commerce",
     title: "MERN E-commerce Project",
     description:
@@ -32,11 +45,11 @@ const projects = [
       { name: "JWT " },
     ],
     image: "/assets/project10.png",
-    live: "https://gadget-hub-client.vercel.app/",  
-    github: "https://github.com/AmineFRAJ/GadgetHub-client.git",  
+    live: "https://gadget-hub-client.vercel.app/",
+    github: "https://github.com/AmineFRAJ/GadgetHub-client.git",
   },
   {
-    num: "02",
+    num: "03",
     category: "frontend",
     title: "Portfolio Project",
     description:
@@ -53,7 +66,7 @@ const projects = [
     github: "https://github.com/AmineFRAJ/nextjs-portfolio.git",
   },
   {
-    num: "03",
+    num: "04",
     category: "frontend",
     title: "ToDo List App",
     description:
@@ -64,7 +77,7 @@ const projects = [
     github: "https://github.com/AmineFRAJ/Redux-todo-app.git",
   },
   {
-    num: "04",
+    num: "05",
     category: "frontend",
     title: "Movie App",
     description:
@@ -75,7 +88,7 @@ const projects = [
     github: "https://github.com/AmineFRAJ/movie-router-app.git",
   },
   {
-    num: "05",
+    num: "06",
     category: "frontend",
     title: "Weather App",
     description:
@@ -86,7 +99,7 @@ const projects = [
     github: "https://github.com/AmineFRAJ/Weather-App.git",
   },
   {
-    num: "06",
+    num: "07",
     category: "frontend",
     title: "Counter App",
     description:
@@ -97,7 +110,7 @@ const projects = [
     github: "",
   },
   {
-    num: "07",
+    num: "08",
     category: "frontend",
     title: "Calculator App",
     description:
@@ -108,7 +121,7 @@ const projects = [
     github: "",
   },
   {
-    num: "08",
+    num: "09",
     category: "frontend",
     title: "Shopping Cart System",
     description:
@@ -119,7 +132,7 @@ const projects = [
     github: "https://github.com/AmineFRAJ/Dom-check01.git",
   },
   {
-    num: "09",
+    num: "10",
     category: "frontend",
     title: "Jewelry Store Website",
     description:
@@ -130,7 +143,7 @@ const projects = [
     github: "https://github.com/AmineFRAJ/Jewelry-Store-Website.git",
   },
   {
-    num: "10",
+    num: "11",
     category: "frontend",
     title: "Restaurant Website",
     description:
@@ -202,7 +215,6 @@ const Projects = () => {
                           <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
                         </TooltipTrigger>
                         <TooltipContent>
-                         
                           <p>Visit project</p>
                         </TooltipContent>
                       </Tooltip>
