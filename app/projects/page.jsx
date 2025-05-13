@@ -71,7 +71,7 @@ const projects = [
     github: "https://github.com/AmineFRAJ/Listify-client",
   },
   {
-    num: "02",
+    num: "04",
     category: "e-commerce",
     title: "MERN E-commerce Project",
     description:
@@ -88,7 +88,7 @@ const projects = [
     github: "https://github.com/AmineFRAJ/GadgetHub-client.git",
   },
   {
-    num: "04",
+    num: "05",
     category: "frontend",
     title: "Portfolio Project",
     description:
@@ -105,7 +105,7 @@ const projects = [
     github: "https://github.com/AmineFRAJ/nextjs-portfolio.git",
   },
   {
-    num: "05",
+    num: "06",
     category: "frontend",
     title: "ToDo List App",
     description:
@@ -116,7 +116,7 @@ const projects = [
     github: "https://github.com/AmineFRAJ/Redux-todo-app.git",
   },
   {
-    num: "06",
+    num: "07",
     category: "frontend",
     title: "Movie App",
     description:
@@ -127,7 +127,7 @@ const projects = [
     github: "https://github.com/AmineFRAJ/movie-router-app.git",
   },
   {
-    num: "07",
+    num: "08",
     category: "frontend",
     title: "Weather App",
     description:
@@ -138,7 +138,7 @@ const projects = [
     github: "https://github.com/AmineFRAJ/Weather-App.git",
   },
   {
-    num: "08",
+    num: "09",
     category: "frontend",
     title: "Counter App",
     description:
@@ -149,7 +149,7 @@ const projects = [
     github: "",
   },
   {
-    num: "09",
+    num: "10",
     category: "frontend",
     title: "Calculator App",
     description:
@@ -160,7 +160,7 @@ const projects = [
     github: "",
   },
   {
-    num: "10",
+    num: "11",
     category: "frontend",
     title: "Shopping Cart System",
     description:
@@ -171,7 +171,7 @@ const projects = [
     github: "https://github.com/AmineFRAJ/Dom-check01.git",
   },
   {
-    num: "11",
+    num: "12",
     category: "frontend",
     title: "Jewelry Store Website",
     description:
@@ -182,7 +182,7 @@ const projects = [
     github: "https://github.com/AmineFRAJ/Jewelry-Store-Website.git",
   },
   {
-    num: "12",
+    num: "13",
     category: "frontend",
     title: "Restaurant Website",
     description:
