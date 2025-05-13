@@ -20,13 +20,52 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
+    category: "Polling App",
+    title: "Raykom – MERN Polling App",
+    description:
+      "Raykom is a modern polling web application developed with the MERN stack and Vite for fast builds. It allows users to create, vote, and manage polls with real-time feedback. The interface is clean, responsive, and user-friendly, featuring dynamic voting options, vote tracking, and authentication.",
+    stack: [
+      { name: "MongoDB" },
+      { name: "Express.js" },
+      { name: "React" },
+      { name: "Node.js" },
+      { name: "Vite" },
+    ],
+    image: "/assets/raykom.png",
+    live: "https://raykom-client.vercel.app/",
+    github: "https://github.com/AmineFRAJ/raykom-client",
+  },
+  {
+    num: "02",
+    category: "Sports Tracker",
+    title: "Whistle – Football Results App",
+    description:
+      "MatchZone is a football match and results tracker built with the MERN stack and Redux for state management. It fetches live and past data from a public football API to display team statistics, match results, and league tables. The app features intuitive navigation, real-time data, and responsive UI.",
+    stack: [
+      { name: "MongoDB" },
+      { name: "Express.js" },
+      { name: "React" },
+      { name: "Node.js" },
+      { name: "Redux" },
+      { name: "REST API" },
+    ],
+    image: "/assets/whistle.png",
+    live: "https://github.com/AmineFRAJ/whistle-client",
+    github: "https://whistle-client.vercel.app/",
+  },
+  {
+    num: "03",
     category: "ToDo List",
     title: "Listify- MERN Project ",
     description:
       "A professional ToDo List application built using React and Bootstrap. This project provides a clean and intuitive interface for task management. Users can add, edit, delete, and organize tasks efficiently. Styled with Bootstrap, it offers a modern and responsive design suitable for various screen sizes.",
-    stack: [   { name: "MongoDB" },
-      { name: "Express.js" },{ name: "React" },{ name: "Node.js" },
-        { name: "Bootstrap" }],
+    stack: [
+      { name: "MongoDB" },
+      { name: "Express.js" },
+      { name: "React" },
+      { name: "Node.js" },
+      { name: "Bootstrap" },
+    ],
     image: "/assets/listify.png",
     live: "https://listify-client.vercel.app/",
     github: "https://github.com/AmineFRAJ/Listify-client",
@@ -49,7 +88,7 @@ const projects = [
     github: "https://github.com/AmineFRAJ/GadgetHub-client.git",
   },
   {
-    num: "03",
+    num: "04",
     category: "frontend",
     title: "Portfolio Project",
     description:
@@ -66,7 +105,7 @@ const projects = [
     github: "https://github.com/AmineFRAJ/nextjs-portfolio.git",
   },
   {
-    num: "04",
+    num: "05",
     category: "frontend",
     title: "ToDo List App",
     description:
@@ -77,7 +116,7 @@ const projects = [
     github: "https://github.com/AmineFRAJ/Redux-todo-app.git",
   },
   {
-    num: "05",
+    num: "06",
     category: "frontend",
     title: "Movie App",
     description:
@@ -88,7 +127,7 @@ const projects = [
     github: "https://github.com/AmineFRAJ/movie-router-app.git",
   },
   {
-    num: "06",
+    num: "07",
     category: "frontend",
     title: "Weather App",
     description:
@@ -99,7 +138,7 @@ const projects = [
     github: "https://github.com/AmineFRAJ/Weather-App.git",
   },
   {
-    num: "07",
+    num: "08",
     category: "frontend",
     title: "Counter App",
     description:
@@ -110,7 +149,7 @@ const projects = [
     github: "",
   },
   {
-    num: "08",
+    num: "09",
     category: "frontend",
     title: "Calculator App",
     description:
@@ -121,7 +160,7 @@ const projects = [
     github: "",
   },
   {
-    num: "09",
+    num: "10",
     category: "frontend",
     title: "Shopping Cart System",
     description:
@@ -132,7 +171,7 @@ const projects = [
     github: "https://github.com/AmineFRAJ/Dom-check01.git",
   },
   {
-    num: "10",
+    num: "11",
     category: "frontend",
     title: "Jewelry Store Website",
     description:
@@ -143,7 +182,7 @@ const projects = [
     github: "https://github.com/AmineFRAJ/Jewelry-Store-Website.git",
   },
   {
-    num: "11",
+    num: "12",
     category: "frontend",
     title: "Restaurant Website",
     description:
